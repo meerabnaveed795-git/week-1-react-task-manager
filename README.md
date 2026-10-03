@@ -104,7 +104,7 @@ During this project, the following React concepts were practiced:
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/meerabnaveed795-git/week-1-react-task-manager.git
 
 2. Open the project folder
 cd week-1-react-task-manager
