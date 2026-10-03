@@ -1,0 +1,190 @@
+/* ========================================
+   Task Manager - AUREX Internship
+   Month 2 - Week 1
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #363434;
+}
+
+/* Main App */
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.task-form input:focus {
+  border-color: #2563eb;
+}
+
+.task-form button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual Task */
+.task-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Task Text */
+.task-text {
+  flex: 1;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Completed Task */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Buttons */
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.task-actions button:first-child {
+  background: #16a34a;
+  color: white;
+}
+
+.task-actions button:first-child:hover {
+  background: #15803d;
+}
+
+.task-actions button:last-child {
+  background: #dc2626;
+  color: white;
+}
+
+.task-actions button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+
+  .task-actions button {
+    flex: 1;
+  }
+}
